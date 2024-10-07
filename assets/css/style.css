@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: var(--Off-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins';
+}
+
+main {
+    background-color: white;
+    width: 625px;
+    min-height: 480px;
+    border-radius: 20px 20px 100px 20px;
+}
+
+input {
+    width: 100px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--Light-grey);
+}
+
+.allInputs:focus {
+    outline: none;
+    border: 1px solid var(--Purple);
+
+}
+
+.allInputs.required-field {
+    border: 1px solid red;
+}
+.age {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.age .title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--Smokey-grey);
+}
+
+.age .required {
+    color: red;
+    font-size: 9px;
+    display: none;
+    position: absolute;
+}
+.age .required.no-text {
+    display: block;
+}
+
+.age .no-valid {
+    color: red;
+    font-size: 9px;
+    display: none;
+    position: absolute;
+}
+
+.age .no-valid.not-ok {
+    display: block;
+}
+
+.age .month {
+    padding: 20px;
+}
+
+.image {
+    border-bottom: 1px solid var(--Off-white);
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.btn {
+    background-image: url(../images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    background-color: var(--Purple);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    border: 0px;
+}
+
+.btn:hover {
+    background-color: var(--Off-black);
+    transition: 0.3s;
+}
+
+.btn:active {
+    border: 1px solid var(--Purple);
+}
+
+.content {
+    display: flex;
+    font-size: 80px;
+    font-weight: 700;
+    flex-direction: column;
+    font-style: italic;
+    padding-left: 50px;
+    padding-bottom: 25px;
+}
+
+.content .years {
+    margin: 0px;
+}
+
+.content .months {
+    margin: 0px;
+}
+
+.content .days {
+    margin: 0px;
+}
+
+.content span {
+    color: var(--Purple);
+}
+
+@media(max-width: 457px){
+    main {
+        width: 340px;
+    }
+
+    .content {
+        font-size: 50px;
+    }
+
+    .age {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    input {
+        width: 80px;
+    }
+
+    .age .month {
+        padding: 10px;
+    }
+
+    .image {
+        margin: 20px;
+    }
+    
+    .btn {
+        left: 125px;
+    }
+
+    .content {
+        padding-bottom: 0px;
+    }
+}

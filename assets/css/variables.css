@@ -1,0 +1,9 @@
+html:root {
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+
+    --Purple: hsl(259, 100%, 65%);
+
+    --Off-black: hsl(0, 0%, 8%);
+}
